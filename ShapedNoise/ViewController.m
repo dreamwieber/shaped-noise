@@ -73,7 +73,7 @@
             }
             
             if (vc->_adsr->_processBlock != nil) {
-                vc->_adsr->_processBlock(frames, output);
+                vc->_adsr->_processBlock(time, frames, output);
             }
             
         }

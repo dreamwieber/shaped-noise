@@ -63,7 +63,7 @@ typedef NS_ENUM(NSInteger, ADSRPhase) {
 {
     __weak ADSR *weakSelf = self;
     
-    self.processBlock = ^(UInt32 frames, float *audio) {
+    self.processBlock = ^(const AudioTimeStamp *time, UInt32 frames, float *audio) {
        
         ADSR *adsr = weakSelf; // strongify
     

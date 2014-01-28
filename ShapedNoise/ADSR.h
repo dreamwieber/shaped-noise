@@ -6,14 +6,9 @@
 //  Copyright (c) 2014 Apposite. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
-// operates on audio in-place, shaping the amplitude
-typedef void (^ADSRBlock)(UInt32 numFrames, float *audio);
-
-@interface ADSR : NSObject {
+#import "TDGenerator.h"
+@interface ADSR : TDGenerator {
     @public
-    ADSRBlock _processBlock;
     BOOL _gateOpen;
 }
 
@@ -24,9 +19,6 @@ typedef void (^ADSRBlock)(UInt32 numFrames, float *audio);
 @property (nonatomic, readwrite) NSTimeInterval releaseT;
 
 @property (nonatomic, readwrite) BOOL gateOpen; // i.e., user is holding a key down
-
-// this block performs the main function of the ADSR, shaping the audio in-place
-@property (nonatomic, copy) ADSRBlock processBlock;
 
 + (instancetype)ADSRWithAttack:(NSTimeInterval)attack
                                 decay:(NSTimeInterval)decay

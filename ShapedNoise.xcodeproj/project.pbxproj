@@ -25,6 +25,7 @@
 		DC23EDED189498C1007328A4 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC23EDEC189498C1007328A4 /* AudioToolbox.framework */; };
 		DC23EDEF189498E3007328A4 /* libTheAmazingAudioEngine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC23EDEE189498E3007328A4 /* libTheAmazingAudioEngine.a */; };
 		DC23EDF218949A76007328A4 /* ADSR.m in Sources */ = {isa = PBXBuildFile; fileRef = DC23EDF118949A76007328A4 /* ADSR.m */; };
+		DCC18F8018981DB200DA165D /* TDGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC18F7F18981DB200DA165D /* TDGenerator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,9 +60,11 @@
 		DC23EDE018949851007328A4 /* ShapedNoiseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShapedNoiseTests.m; sourceTree = "<group>"; };
 		DC23EDEA189498B9007328A4 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		DC23EDEC189498C1007328A4 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		DC23EDEE189498E3007328A4 /* libTheAmazingAudioEngine.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libTheAmazingAudioEngine.a; path = "TheAmazingAudioEngine/build/Debug-iphoneos/libTheAmazingAudioEngine.a"; sourceTree = "<group>"; };
+		DC23EDEE189498E3007328A4 /* libTheAmazingAudioEngine.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTheAmazingAudioEngine.a; path = "TheAmazingAudioEngine/build/Debug-iphoneos/libTheAmazingAudioEngine.a"; sourceTree = "<group>"; };
 		DC23EDF018949A76007328A4 /* ADSR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADSR.h; sourceTree = "<group>"; };
 		DC23EDF118949A76007328A4 /* ADSR.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADSR.m; sourceTree = "<group>"; };
+		DCC18F7E18981DB200DA165D /* TDGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDGenerator.h; sourceTree = "<group>"; };
+		DCC18F7F18981DB200DA165D /* TDGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDGenerator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +137,8 @@
 				DC23EDCB18949851007328A4 /* ViewController.m */,
 				DC23EDF018949A76007328A4 /* ADSR.h */,
 				DC23EDF118949A76007328A4 /* ADSR.m */,
+				DCC18F7E18981DB200DA165D /* TDGenerator.h */,
+				DCC18F7F18981DB200DA165D /* TDGenerator.m */,
 				DC23EDCD18949851007328A4 /* Images.xcassets */,
 				DC23EDBC18949851007328A4 /* Supporting Files */,
 			);
@@ -270,6 +275,7 @@
 				DC23EDC618949851007328A4 /* AppDelegate.m in Sources */,
 				DC23EDC218949851007328A4 /* main.m in Sources */,
 				DC23EDF218949A76007328A4 /* ADSR.m in Sources */,
+				DCC18F8018981DB200DA165D /* TDGenerator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
